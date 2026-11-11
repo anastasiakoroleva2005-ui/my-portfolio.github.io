@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 42px 20px 56px;
+  background: #f5f2eb;
+  color: #20221f;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.hero,
+main,
+.footer {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 8px 42px;
+  border-bottom: 3px solid #20221f;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 170px;
+  width: 170px;
+  height: 170px;
+  border: 7px solid #d8f36a;
+  border-radius: 50%;
+  background: #c8d8ff;
+  color: #20221f;
+  font-size: 68px;
+  font-weight: 800;
+  transform: rotate(-7deg);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.kicker {
+  margin: 0 0 9px;
+  color: #f05b43;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 14px;
+  font-size: clamp(42px, 8vw, 68px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+h1 span {
+  color: #f05b43;
+}
+
+.lead {
+  max-width: 560px;
+  margin: 0 0 12px;
+  color: #55584f;
+  font-size: 19px;
+}
+
+.hero-meta {
+  margin: 0 0 22px;
+  color: #77796f;
+  font-size: 14px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 17px;
+  border-radius: 30px;
+  background: #20221f;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.button:hover,
+.button:focus {
+  background: #d8f36a;
+  color: #20221f;
+}
+
+.card {
+  margin-top: 24px;
+  padding: 28px 32px 30px;
+  background: #fffdf8;
+  border: 1px solid rgba(32, 34, 31, 0.12);
+  border-radius: 20px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: #f05b43;
+  transform: translateY(-2px);
+}
+
+h2 {
+  margin: 0 0 17px;
+  font-size: 30px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.tags span {
+  padding: 6px 12px;
+  border: 1px solid #d8d9d1;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.study {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.study li {
+  display: flex;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e8e6df;
+}
+
+.study li:last-child {
+  border-bottom: none;
+}
+
+.year {
+  flex: 0 0 110px;
+  width: 110px;
+  color: #f05b43;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.tag {
+  flex: 0 0 110px;
+  width: 110px;
+  color: #77796f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.study p {
+  margin: 0;
+  font-size: 14px;
+  color: #55584f;
+}
+
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hobby {
+  flex: 1 1 210px;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.hobby span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 27px;
+}
+
+.hobby-one {
+  background: #d8f36a;
+}
+
+.hobby-two {
+  background: #c8d8ff;
+}
+
+.hobby-three {
+  background: #ffd8ce;
+}
+
+.hobby p {
+  margin: 0;
+  font-size: 14px;
+  color: #55584f;
+}
+
+.hobby-more {
+  margin: 22px 0 0;
+}
+
+.footer {
+  margin-top: 42px;
+  padding: 30px 15px 0;
+  border-top: 1px solid #d5d3cb;
+  text-align: center;
+}
+
+.footer h2 {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  display: inline-block;
+  margin: 12px 0 24px;
+  color: #f05b43;
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: #20221f;
+  background: #d8f36a;
+}
+
+.small {
+  color: #85867e;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 22px 14px 35px;
+  }
+
+  .hero {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .avatar {
+    flex-basis: 130px;
+    width: 130px;
+    height: 130px;
+    font-size: 52px;
+  }
+
+  .hero-text {
+    min-width: 100%;
+  }
+
+  .lead {
+    font-size: 17px;
+  }
+
+  .card {
+    padding: 23px 20px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .study li {
+    gap: 12px;
+  }
+
+  .year {
+    flex-basis: 80px;
+    width: 80px;
+  }
+
+  .tag {
+    flex-basis: 80px;
+    width: 80px;
+  }
+}
